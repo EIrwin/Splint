@@ -24,9 +24,12 @@ Simplistic web browser test automation framework for C#
 public void GoogleSearchPageTest()
 {
     Splint.Test(()=> {
+    
       GoogleHomePage homePage = new GoogleHomePage();
       GoogleResultsPage resultsPage = homePage.Search("Test Search");
+      
       Assert.IsTrue(resultsPage != null)
+      
     }).WithDriver(DriverType.InternetExplorer)
       .Run()
 }
@@ -41,6 +44,7 @@ public void GoogleSearchPageTest()
     
       GoogleHomePage homePage = new GoogleHomePage();
       GoogleResultsPage resultsPage = homePage.Search("Test Search");
+      
       Assert.IsTrue(resultsPage != null)
       
     }).WithDrivers(new[]{DriverType.InternetExplorer,DriverType.Chrome})
@@ -57,6 +61,7 @@ public void GoogleSearchPageTest()
     
       GoogleHomePage homePage = new GoogleHomePage();
       GoogleResultsPage resultsPage = homePage.Search("Test Search");
+      
       Assert.IsTrue(resultsPage != null)
       
     }).WithAllDrivers()
