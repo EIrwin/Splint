@@ -1,6 +1,6 @@
 ﻿using System;
-using Splint.Core.Drivers;
-using Splint.Extensions;
+using Splint.Core.Extensions;
+using Splint.Drivers;
 
 namespace Splint.Core.Exceptions
 {

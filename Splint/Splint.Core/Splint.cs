@@ -1,7 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
+using Splint.Core.Drivers;
+using Splint.Core.Exceptions;
 using Splint.Drivers;
-using Splint.Exceptions;
 
 namespace Splint.Core
 {

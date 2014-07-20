@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel;
 using System.Linq;
-using Splint.Core.Drivers;
+using Splint.Drivers;
 
 namespace Splint.Core.Extensions
 {
