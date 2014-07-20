@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Splint", "Splint\Splint.csproj", "{DA4B9216-E926-4BB4-BBC2-3C5B82AE302B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Splint.Core", "Splint\Splint.Core.csproj", "{DA4B9216-E926-4BB4-BBC2-3C5B82AE302B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

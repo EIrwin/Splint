@@ -7,8 +7,8 @@
     <ProjectGuid>{DA4B9216-E926-4BB4-BBC2-3C5B82AE302B}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Splint</RootNamespace>
-    <AssemblyName>Splint</AssemblyName>
+    <RootNamespace>Splint.Core</RootNamespace>
+    <AssemblyName>Splint.Core</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
