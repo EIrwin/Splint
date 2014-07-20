@@ -1,8 +1,8 @@
 ﻿using System;
-using Splint.Drivers;
+using Splint.Core.Drivers;
 using Splint.Extensions;
 
-namespace Splint.Exceptions
+namespace Splint.Core.Exceptions
 {
     public sealed class DriverAlreadyDefinedException : SystemException
     {

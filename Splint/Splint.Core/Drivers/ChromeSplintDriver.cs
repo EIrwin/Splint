@@ -1,6 +1,7 @@
 ﻿using OpenQA.Selenium;
+using Splint.Drivers;
 
-namespace Splint.Drivers
+namespace Splint.Core.Drivers
 {
     public class ChromeSplintDriver : ISplintDriver
     {

@@ -1,10 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
-using NUnit.Framework;
 using Splint.Drivers;
 using Splint.Exceptions;
 
-namespace Splint
+namespace Splint.Core
 {
     public class Splint
     {

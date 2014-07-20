@@ -1,6 +1,6 @@
 ﻿using OpenQA.Selenium;
 
-namespace Splint.Drivers
+namespace Splint.Core.Drivers
 {
     public interface ISplintDriver
     {

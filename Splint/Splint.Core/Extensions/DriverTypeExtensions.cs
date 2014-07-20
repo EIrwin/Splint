@@ -1,11 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
+﻿using System.ComponentModel;
 using System.Linq;
-using System.Text;
-using Splint.Drivers;
+using Splint.Core.Drivers;
 
-namespace Splint.Extensions
+namespace Splint.Core.Extensions
 {
     public static class DriverTypeExtensions
     {
