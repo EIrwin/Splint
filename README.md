@@ -1,12 +1,20 @@
 <h1>Splint
-======
 
-Simplistic lightweight web browser test automation framework for C#
+Simplistic web browser test automation framework for C#
 
 <h2>What is Splint?</h2>
 
 <h2>Why Splint</h2>
 
+<h2>Core Concepts</h2>
+<ul>
+    <li>Simplistic</li>
+    <li>Lightweight</li>
+    <li>Fluid</li>
+    <li>Increase Readability</li>
+    <li>Reduce Test Code Duplication</li>
+    
+</ul>
 <h2>Examples</h2>
 
 
