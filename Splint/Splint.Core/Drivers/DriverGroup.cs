@@ -8,9 +8,14 @@ namespace Splint.Core.Drivers
 {
     public class DriverGroup : IDriverGroup
     {
-        public List<IWebDriver> Drivers { get; set; }
+        public List<ISplintDriver> Drivers { get; set; }
         public string Name { get; set; }
         public string Description { get; set; }
+
+        public DriverGroup()
+        {
+            
+        }
 
         public DriverGroup(string name, string description)
         {
@@ -18,14 +23,14 @@ namespace Splint.Core.Drivers
             this.Description = description;
         }
 
-        public DriverGroup(string name, string description, List<IWebDriver> drivers)
+        public DriverGroup(string name, string description, List<ISplintDriver> drivers)
         {
             this.Name = name;
             this.Description = description;
             Drivers = drivers;
         }
 
-        public void AddDriver(IWebDriver driver)
+        public void AddDriver(ISplintDriver driver)
         {
             Drivers.Add(driver);
         }

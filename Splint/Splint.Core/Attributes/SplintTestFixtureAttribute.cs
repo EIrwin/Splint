@@ -14,6 +14,8 @@ namespace Splint.Core.Attributes
             InitializeDriverGroupConfiguration();
         }
 
+        
+
         protected void InitializeDriverGroupConfiguration()
         {
             DriverGroupConfiguration configuration = new DriverGroupConfiguration();

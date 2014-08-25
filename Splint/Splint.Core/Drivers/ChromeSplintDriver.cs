@@ -6,7 +6,6 @@ namespace Splint.Core.Drivers
 {
     public class ChromeSplintDriver : ChromeDriver,ISplintDriver
     {
-        public IWebDriver WebDriver { get; set; }
         public DriverType Type { get; set; }
         public string Name { get; set; }
     }

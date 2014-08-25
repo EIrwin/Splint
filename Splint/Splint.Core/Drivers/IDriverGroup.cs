@@ -6,9 +6,9 @@ using OpenQA.Selenium;
 
 namespace Splint.Core.Drivers
 {
-    public interface IDriverGroup
+    public interface  IDriverGroup
     {
-        List<IWebDriver> Drivers { get; set; }
+        List<ISplintDriver> Drivers { get; set; }
 
         string Name { get; set; }
 

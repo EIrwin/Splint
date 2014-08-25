@@ -6,7 +6,6 @@ namespace Splint.Core.Drivers
 {
     public class InternetExplorerSplintDriver : InternetExplorerDriver,ISplintDriver
     {
-        public IWebDriver WebDriver { get; set; }
         public DriverType Type { get; set; }
         public string Name { get; set; }
     }

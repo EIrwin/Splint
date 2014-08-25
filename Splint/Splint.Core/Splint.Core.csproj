@@ -67,6 +67,8 @@
     <Compile Include="Drivers\IWebDriverFactory.cs" />
     <Compile Include="Drivers\WebDriverFactory.cs" />
     <Compile Include="Exceptions\DriverAlreadyDefinedException.cs" />
+    <Compile Include="Exceptions\DriverGroupNotFoundException.cs" />
+    <Compile Include="Exceptions\NoDriversDefinedException.cs" />
     <Compile Include="Extensions\DriverTypeExtensions.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Splint.cs" />

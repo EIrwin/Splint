@@ -19,7 +19,6 @@ namespace Splint.Core.Drivers
                         {
                             Name = "Chrome",
                             Type = driverType,
-                            WebDriver = new ChromeDriver()
                         };
                     break;
                 case DriverType.Firefox:
@@ -27,7 +26,6 @@ namespace Splint.Core.Drivers
                         {
                             Name = "Firefox",
                             Type = driverType,
-                            WebDriver = new FirefoxDriver()
                         };
                     break;
                 case DriverType.InternetExplorer:
@@ -35,7 +33,6 @@ namespace Splint.Core.Drivers
                         {
                             Name = "Internet Explorer",
                             Type = driverType,
-                            WebDriver = new InternetExplorerDriver()
                         };
                     break;
                 default:

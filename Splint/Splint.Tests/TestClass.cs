@@ -11,6 +11,9 @@ namespace Splint.Tests
     [SplintTestFixture]
     public class TestClass
     {
-       
+       public void Test()
+       {
+           
+       }
     }
 }

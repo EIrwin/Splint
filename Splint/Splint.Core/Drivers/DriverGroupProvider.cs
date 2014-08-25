@@ -13,6 +13,7 @@ namespace Splint.Core.Drivers
         {
             AddDriverGroup(driverGroup.Name, driverGroup);
         }
+
         public static void AddDriverGroup(string name, IDriverGroup driverGroup)
         {
             if (!DriverGroups.ContainsKey(name))
@@ -23,10 +24,21 @@ namespace Splint.Core.Drivers
         {
             RemoveDriverGroup(driverGroup.Name);
         }
+
         public static void RemoveDriverGroup(string name)
         {
             if (DriverGroups.ContainsKey(name))
                 DriverGroups.Remove(name);
+        }
+
+        public static IDriverGroup GetDriverGroup(string name)
+        {
+            IDriverGroup driverGroup = default(IDriverGroup);
+
+            if (DriverGroups.ContainsKey(name))
+                driverGroup =  DriverGroups[name];
+
+            return driverGroup;
         }
     }
 }

@@ -13,17 +13,19 @@ namespace Splint.Core.Config
     {
         public void RegisterDriverGroups()
         {
-            DriverGroup webDriverGroup = new DriverGroup("Web", "Drivers intended to test web UI")
+            DriverGroup webDriverGroup = new DriverGroup()
             {
                 Name = "Web",
                 Description = "Drivers intended to test web UI",
-                Drivers = new System.Collections.Generic.List<IWebDriver>()
+                Drivers = new System.Collections.Generic.List<ISplintDriver>()
                         {
                             new ChromeSplintDriver(),
                             new FirefoxSplintDriver(),
                             new InternetExplorerSplintDriver()
                         }
             };
+
+            //TODO: Add mobile driver group
 
             DriverGroupProvider.AddDriverGroup(webDriverGroup);
         }
