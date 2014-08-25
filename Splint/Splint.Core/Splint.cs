@@ -66,7 +66,7 @@ namespace Splint.Core
         public void Run()
         {
             if (_drivers.Count == 0)
-                throw new NoDriversDefinedException();
+                //throw new NoDriversDefinedException();
 
             _test();
         }

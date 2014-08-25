@@ -3,11 +3,13 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using NUnit.Framework;
+using Splint.Core.Attributes;
 using Splint.Drivers;
 
 namespace Splint.Tests
 {
-    public class Class1
+    [SplintTestFixture]
+    public class TestClass
     {
        
     }

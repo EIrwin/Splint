@@ -1,9 +1,10 @@
 ﻿using OpenQA.Selenium;
+using OpenQA.Selenium.Chrome;
 using Splint.Drivers;
 
 namespace Splint.Core.Drivers
 {
-    public class ChromeSplintDriver : ISplintDriver
+    public class ChromeSplintDriver : ChromeDriver,ISplintDriver
     {
         public IWebDriver WebDriver { get; set; }
         public DriverType Type { get; set; }
