@@ -5,18 +5,21 @@ Simplistic web browser test automation framework for C#
 <h2>What is Splint?</h2>
 
 <h2>Why Splint</h2>
+<ul>
+    <li>Tests code is ugly</li>
+    <li>Tests code is redundant</li>
+    <li>Writing tests is expensive</li>
+</ul>
 
 <h2>Core Concepts</h2>
 <ul>
-    <li>Simplistic</li>
-    <li>Lightweight</li>
-    <li>Fluid</li>
-    <li>Increase Readability</li>
-    <li>Reduce Test Code Duplication</li>
-    
+    <li>Clean Test Specification</li>
+    <li>Configurable Driver Groups</li>
+    <li>Extensible Driver Configuration</li>
+    <li>Fluid API Chaining</li>
 </ul>
-<h2>Examples</h2>
 
+<h2>Examples</h2>
 
 <h4>Run Test Against a Single Browser Type</h4>
 <pre>
