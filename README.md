@@ -6,9 +6,9 @@ Simplistic web browser test automation framework for C#
 
 <h2>Why Splint</h2>
 <ul>
-    <li>Tests code is ugly</li>
-    <li>Tests code is redundant</li>
-    <li>Writing tests is expensive</li>
+    <li>UI test code is ugly</li>
+    <li>UI test code is redundant</li>
+    <li>UI tests are expensive to write</li>
 </ul>
 
 <h2>Core Concepts</h2>
@@ -19,7 +19,7 @@ Simplistic web browser test automation framework for C#
     <li>Fluid API Chaining</li>
 </ul>
 
-<h2>Examples</h2>
+<h2>Examples - Basic Usage</h2>
 
 <h4>Run Test Against a Single Browser Type</h4>
 <pre>
@@ -68,6 +68,57 @@ public void GoogleSearchPageTest()
       Assert.IsTrue(resultsPage != null)
       
     }).WithAllDrivers()
+      .Run()
+}
+</pre>
+
+<h4>Run Test Against Single Driver Group</h4>
+<pre>
+[Test]
+public void GoogleSearchPageTest()
+{
+    Splint.Test(()=> {
+    
+      GoogleHomePage homePage = new GoogleHomePage();
+      GoogleResultsPage resultsPage = homePage.Search("Test Search");
+      
+      Assert.IsTrue(resultsPage != null)
+      
+    }).WithDriverGroup("Web")
+      .Run()
+}
+</pre>
+
+<h4>Run Test Against Multiple Driver Groups</h4>
+<pre>
+[Test]
+public void GoogleSearchPageTest()
+{
+    Splint.Test(()=> {
+    
+      GoogleHomePage homePage = new GoogleHomePage();
+      GoogleResultsPage resultsPage = homePage.Search("Test Search");
+      
+      Assert.IsTrue(resultsPage != null)
+      
+    }).WithDriverGroups("Web","Mobile")
+      .Run()
+}
+</pre>
+
+<h4>Run Test Against All Driver Groups</h4>
+<pre>
+[Test]
+public void GoogleSearchPageTest()
+{
+    Splint.Test(()=> {
+    
+      GoogleHomePage homePage = new GoogleHomePage();
+      GoogleResultsPage resultsPage = homePage.Search("Test Search");
+      
+      Assert.IsTrue(resultsPage != null)
+      
+    }).WithAllDriverGroups()
       .Run()
 }
 </pre>
